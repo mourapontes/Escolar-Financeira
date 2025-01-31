@@ -1,0 +1,208 @@
+/* Estilos globais */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f4f8; /* Fundo mais suave */
+  color: #333;
+  line-height: 1.7;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h1 {
+    color: #2c3e50; /* Azul escuro para títulos principais */
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #495057; /* Cinza escuro para subtítulos */
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+/* Formulário */
+#formulario-receitas {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600; /* Peso da fonte mais forte */
+    color: #495057;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ced4da; /* Borda mais clara */
+    border-radius: 8px;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #007bff; /* Cor da borda no foco */
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); /* Sombra suave no foco */
+}
+
+input[type="number"] {
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    padding: 14px 22px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra nos botões */
+}
+
+button:hover {
+   transform: translateY(-2px); /* Efeito de levantar o botão */
+}
+
+/* Botão "Gerar Plano" */
+#formulario-receitas button[type="submit"] {
+    background-color: #ffc107; /* Amarelo */
+    color: #000; /* Texto preto para contraste */
+}
+
+/* Plano de Aplicação */
+#plano-container {
+    border: 1px solid #dee2e6; /* Borda mais clara */
+    padding: 30px;
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#plano-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#plano-container li {
+    margin-bottom: 12px;
+    padding: 14px;
+    border: 1px solid #e9ecef; /* Borda mais clara */
+    background-color: #f8f9fa; /* Fundo mais claro */
+    border-radius: 8px;
+}
+
+#plano-container p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #495057;
+}
+
+/* Botões de Exportação e Novo Plano */
+#pdf-container,
+#excel-container,
+#novo-plano-container {
+    margin-top: 25px;
+    text-align: center;
+}
+
+#pdf-container button {
+    background-color: #dc3545; /* Vermelho para PDF */
+}
+
+#excel-container button {
+    background-color: #28a745; /* Verde para Excel */
+}
+
+#novo-plano-container button {
+    background-color: #007bff; /* Azul para Novo Plano */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #formulario-receitas {
+        padding: 20px;
+    }
+
+    input {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 12px 18px;
+        font-size: 1rem;
+    }
+
+    #plano-container {
+        padding: 20px;
+    }
+
+    #plano-container p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    #formulario-receitas {
+        padding: 15px;
+    }
+
+    input {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    #plano-container {
+        padding: 15px;
+    }
+
+    #plano-container p {
+        font-size: 0.9rem;
+    }
+}
