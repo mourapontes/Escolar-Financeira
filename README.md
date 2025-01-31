@@ -1,1 +1,1 @@
-# Escolar-Aplica-o-Financeira
+# Escolar-Financeira
